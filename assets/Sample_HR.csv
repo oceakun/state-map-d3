@@ -1,0 +1,91 @@
+candidate_name,party,vote_share,vote_share_bucket,st_name,st_no,ac_name,ac_no,margin,margin_bucket,gender,age,age_bucket,criminal,criminal_cases,assets,assets_bucket
+Pardeep Chaudhary,INC,45.26,Less than 50%,Haryana,S07,Kalka,1,5931,5001 - 10000,male,58,40 - 60,1,Yes,144677698,10Cr - 50Cr
+Gian Chand Gupta,BJP,48.84,Less than 50%,Haryana,S07,Panchkula,2,5633,5001 - 10000,male,71,More than 60,0,No,119188025,10Cr - 50Cr
+Shalley,INC,39.56,Less than 50%,Haryana,S07,Naraingarh,3,20600,>10000,female,53,40 - 60,0,No,534122557,More than 50Cr
+Anil Vij,BJP,53.04,More than 50%,Haryana,S07,Ambala Cantt.,4,20165,>10000,male,66,More than 60,0,No,10361794,Less than 10Cr
+Aseem Goel Naneola,BJP,42.2,Less than 50%,Haryana,S07,Ambala City,5,8952,5001 - 10000,male,39,Less than 40,0,No,52508361,Less than 10Cr
+Varun Chaudhary,INC,43.6,Less than 50%,Haryana,S07,Mulana (SC),6,1688,<5000,male,39,Less than 40,0,No,60768885,Less than 10Cr
+Renu Bala,INC,40.01,Less than 50%,Haryana,S07,Sadhaura (SC),7,17020,>10000,female,39,Less than 40,0,No,20614464,Less than 10Cr
+Kanwar Pal,BJP,38.88,Less than 50%,Haryana,S07,Jagadhri,8,16373,>10000,male,59,40 - 60,0,No,39151319,Less than 10Cr
+Ghanshyam Dass,BJP,43.02,Less than 50%,Haryana,S07,Yamunanagar,9,1455,<5000,male,67,More than 60,0,No,76846845,Less than 10Cr
+Bishan Lal,INC,38.05,Less than 50%,Haryana,S07,Radaur,10,2541,<5000,male,64,More than 60,0,No,32963494,Less than 10Cr
+Mewa Singh,INC,41.86,Less than 50%,Haryana,S07,Ladwa,11,12637,>10000,male,60,40 - 60,0,No,45426454,Less than 10Cr
+Ram Karan,JJP,55.35,More than 50%,Haryana,S07,Shahbad,12,37127,>10000,male,50,40 - 60,1,Yes,26725296,Less than 10Cr
+Subhash Sudha,BJP,43.03,Less than 50%,Haryana,S07,Thanesar,13,842,<5000,male,55,40 - 60,0,No,53259164,Less than 10Cr
+Sandeep Singh,BJP,34.69,Less than 50%,Haryana,S07,Pehowa,14,5314,5001 - 10000,male,33,Less than 40,0,No,25789402,Less than 10Cr
+Ishwar Singh,JJP,27.82,Less than 50%,Haryana,S07,Guhla (SC),15,4574,<5000,male,69,More than 60,0,No,12608370,Less than 10Cr
+Kamlesh Dhanda,BJP,35.19,Less than 50%,Haryana,S07,Kalayat,16,8974,5001 - 10000,female,52,40 - 60,0,No,25901500,Less than 10Cr
+Leela Ram,BJP,45.79,Less than 50%,Haryana,S07,Kaithal,17,1246,<5000,male,58,40 - 60,0,No,43548869,Less than 10Cr
+Randhir Singh Gollen,IND,29.94,Less than 50%,Haryana,S07,Pundri,18,12824,>10000,male,54,40 - 60,0,No,36552050,Less than 10Cr
+Dharam Pal Gonder,IND,32.02,Less than 50%,Haryana,S07,Nilokheri (SC),19,2222,<5000,male,62,More than 60,0,No,9366502,Less than 10Cr
+Ram Kumar,BJP,38.01,Less than 50%,Haryana,S07,Indri,20,7431,5001 - 10000,male,68,More than 60,0,No,22525900,Less than 10Cr
+Manohar Lal,BJP,63.72,More than 50%,Haryana,S07,Karnal,21,45188,>10000,male,65,More than 60,0,No,12700985,Less than 10Cr
+Harvinder Kalyan,BJP,46.71,Less than 50%,Haryana,S07,Gharaunda,22,17402,>10000,male,52,40 - 60,0,No,15486290,Less than 10Cr
+Shamsher Singh Gogi,INC,20.94,Less than 50%,Haryana,S07,Assandh,23,1703,<5000,male,63,More than 60,0,No,112212538,10Cr - 50Cr
+Mahipal Dhanda,BJP,40.77,Less than 50%,Haryana,S07,Panipat Rural,24,21961,>10000,male,45,40 - 60,0,No,115629820,10Cr - 50Cr
+Parmod Kumar Vij,BJP,62.84,More than 50%,Haryana,S07,Panipat City,25,39545,>10000,male,64,More than 60,0,No,484966263,10Cr - 50Cr
+Balbir Singh,INC,48.21,Less than 50%,Haryana,S07,Israna (SC),26,20015,>10000,male,45,40 - 60,0,No,4085000,Less than 10Cr
+Dharam Singh Chhoker,INC,52.16,More than 50%,Haryana,S07,Samalkha,27,14942,>10000,male,58,40 - 60,0,No,16425701,Less than 10Cr
+Nirmal Rani,BJP,48.33,Less than 50%,Haryana,S07,Ganaur,28,10280,>10000,female,51,40 - 60,1,Yes,881510164,More than 50Cr
+Mohan Lal Badoli,BJP,37.99,Less than 50%,Haryana,S07,Rai,29,2662,<5000,male,57,40 - 60,0,No,125439655,10Cr - 50Cr
+Jaiveer Singh,INC,38.05,Less than 50%,Haryana,S07,Kharkhauda (SC),30,1544,<5000,male,56,40 - 60,0,No,10597750,Less than 10Cr
+Surender Panwar,INC,59.51,More than 50%,Haryana,S07,Sonipat,31,32878,>10000,male,50,40 - 60,0,No,195806267,10Cr - 50Cr
+Jagbir Singh Malik,INC,33.39,Less than 50%,Haryana,S07,Gohana,32,4152,<5000,male,69,More than 60,0,No,53748283,Less than 10Cr
+Sri Krishan Hooda,INC,34.67,Less than 50%,Haryana,S07,Baroda,33,4840,<5000,male,74,More than 60,0,No,227664364,10Cr - 50Cr
+Amarjeet Dhanda,JJP,49.01,Less than 50%,Haryana,S07,Julana,34,24193,>10000,male,36,Less than 40,0,No,32103046,Less than 10Cr
+Subhash Gangoli,INC,42.28,Less than 50%,Haryana,S07,Safidon,35,3658,<5000,male,51,40 - 60,0,No,159934666,10Cr - 50Cr
+Dr. Krishan Lal Middha,BJP,47.2,Less than 50%,Haryana,S07,Jind,36,12508,>10000,male,49,40 - 60,0,No,24159760,Less than 10Cr
+Dushyant Chautala,JJP,58.39,More than 50%,Haryana,S07,Uchana kalan,37,47452,>10000,male,31,Less than 40,0,No,695658313,More than 50Cr
+Ram Niwas,JJP,51.91,More than 50%,Haryana,S07,Narwana (SC),38,30692,>10000,male,44,40 - 60,0,No,80844000,Less than 10Cr
+Devender Singh Babli,JJP,56.72,More than 50%,Haryana,S07,Tohana,39,52302,>10000,male,49,40 - 60,0,No,360628511,10Cr - 50Cr
+Dura Ram,BJP,41.97,Less than 50%,Haryana,S07,Fatehabad,40,3300,<5000,male,61,More than 60,0,No,171138739,10Cr - 50Cr
+Lakshman Napa,BJP,34.97,Less than 50%,Haryana,S07,Ratia (SC),41,1216,<5000,male,52,40 - 60,0,No,4432289,Less than 10Cr
+Shishpal Singh,INC,39.76,Less than 50%,Haryana,S07,Kalawali (SC),42,19243,>10000,male,40,Less than 40,0,No,8304003,Less than 10Cr
+Amit Sihag,INC,42.57,Less than 50%,Haryana,S07,Dabwali,43,15647,>10000,male,37,Less than 40,0,No,104275372,10Cr - 50Cr
+Ranjit Singh,IND,37.48,Less than 50%,Haryana,S07,Rania,44,19431,>10000,male,73,More than 60,0,No,269202761,10Cr - 50Cr
+Gopal Kanda,HLP,31.65,Less than 50%,Haryana,S07,Sirsa,45,602,<5000,male,54,40 - 60,9,Yes,171097843,10Cr - 50Cr
+Abhay Singh Chautala,INLD,37.86,Less than 50%,Haryana,S07,Ellenabad,46,11922,>10000,male,54,40 - 60,2,Yes,658794116,More than 50Cr
+Kuldeep Bishnoi,INC,51.7,More than 50%,Haryana,S07,Adampur,47,29471,>10000,male,51,40 - 60,0,No,948912048,More than 50Cr
+Anoop Dhanak,JJP,46.84,Less than 50%,Haryana,S07,Uklana (SC),48,23693,>10000,male,46,40 - 60,0,No,9599804,Less than 10Cr
+Ram Kumar Gautam,JJP,47.89,Less than 50%,Haryana,S07,Narnaund,49,12029,>10000,male,73,More than 60,0,No,62667293,Less than 10Cr
+Vinod Bhayana,BJP,41.65,Less than 50%,Haryana,S07,Hansi,50,22260,>10000,male,62,More than 60,1,Yes,31866542,Less than 10Cr
+Jogi Ram Sihag,JJP,36.69,Less than 50%,Haryana,S07,Barwala,51,3908,<5000,male,58,40 - 60,0,No,237345798,10Cr - 50Cr
+Dr. Kamal Gupta,BJP,50.39,More than 50%,Haryana,S07,Hisar,52,15832,>10000,male,66,More than 60,0,No,25558469,Less than 10Cr
+Ranbir Gangwa,BJP,41.09,Less than 50%,Haryana,S07,Nalwa,53,9672,5001 - 10000,male,55,40 - 60,0,No,83628122,Less than 10Cr
+Jai Parkash Dalal,BJP,44.02,Less than 50%,Haryana,S07,Loharu,54,17677,>10000,male,63,More than 60,0,No,707443624,More than 50Cr
+Naina Singh,JJP,40.09,Less than 50%,Haryana,S07,Badhra,55,13704,>10000,female,52,40 - 60,0,No,874607479,More than 50Cr
+Sombir,IND,34.66,Less than 50%,Haryana,S07,Dadri,56,14272,>10000,male,52,40 - 60,10,Yes,11022712,Less than 10Cr
+Ghanshyam Saraf,BJP,47.4,Less than 50%,Haryana,S07,Bhiwani,57,27884,>10000,male,55,40 - 60,0,No,61555778,Less than 10Cr
+Kiran Choudhry,INC,49.72,Less than 50%,Haryana,S07,Tosham,58,18059,>10000,female,64,More than 60,0,No,506611000,More than 50Cr
+Bishamber Singh,BJP,38.51,Less than 50%,Haryana,S07,Bawani Khera (SC),59,10895,>10000,male,49,40 - 60,0,No,8158755,Less than 10Cr
+Balraj Kundu,IND,35.39,Less than 50%,Haryana,S07,Meham,60,12047,>10000,male,48,40 - 60,1,Yes,1322309870,More than 50Cr
+Bhupinder Singh Hooda,INC,65.82,More than 50%,Haryana,S07,Garhi Sampla-Kiloi,61,58312,>10000,male,72,More than 60,7,Yes,155439836,10Cr - 50Cr
+Bharat Bhushan Batra,INC,43.93,Less than 50%,Haryana,S07,Rohtak,62,2735,<5000,male,67,More than 60,0,No,96941696,Less than 10Cr
+Shakuntla Khatak,INC,46.53,Less than 50%,Haryana,S07,Kalanaur (SC),63,10624,>10000,female,51,40 - 60,0,No,35965583,Less than 10Cr
+Rajinder Singh Joon,INC,40.77,Less than 50%,Haryana,S07,Bahadurgarh,64,15491,>10000,male,63,More than 60,0,No,491636098,10Cr - 50Cr
+Kuldeep Vats,INC,37.54,Less than 50%,Haryana,S07,Badli,65,11245,>10000,male,44,40 - 60,0,No,40194790,Less than 10Cr
+Geeta Bhukkal,INC,41.8,Less than 50%,Haryana,S07,Jhajjar (SC),66,14999,>10000,female,51,40 - 60,0,No,47812736,Less than 10Cr
+Dr. Raghuvir Singh Kadian,INC,39.4,Less than 50%,Haryana,S07,Beri,67,12952,>10000,male,75,More than 60,0,No,147534105,10Cr - 50Cr
+Sitaram,BJP,43.97,Less than 50%,Haryana,S07,Ateli,68,18406,>10000,male,57,40 - 60,0,No,29776653,Less than 10Cr
+Rao Dan Singh,INC,32.43,Less than 50%,Haryana,S07,Mahendragarh,69,10220,>10000,male,63,More than 60,1,Yes,155353370,10Cr - 50Cr
+Om Prakash Yadav,BJP,43.21,Less than 50%,Haryana,S07,Narnaul,70,14715,>10000,male,63,More than 60,0,No,9245670,Less than 10Cr
+Dr. Abhe Singh Yadav,BJP,53.57,More than 50%,Haryana,S07,Nangal chaudhry,71,20615,>10000,male,64,More than 60,0,No,94822684,Less than 10Cr
+Dr. Banwari Lal,BJP,47.99,Less than 50%,Haryana,S07,Bawal (SC),72,32245,>10000,male,62,More than 60,0,No,26543337,Less than 10Cr
+Laxman Singh Yadav,BJP,52.42,More than 50%,Haryana,S07,Kosli,73,38624,>10000,male,59,40 - 60,0,No,33718254,Less than 10Cr
+Chiranjeev Rao,INC,27.82,Less than 50%,Haryana,S07,Rewari,74,1317,<5000,male,33,Less than 40,0,No,104630937,10Cr - 50Cr
+Satya Parkash,BJP,44.2,Less than 50%,Haryana,S07,Pataudi (SC),75,36579,>10000,male,52,40 - 60,0,No,4304437,Less than 10Cr
+Rakesh Daultabad,IND,47.06,Less than 50%,Haryana,S07,Badshahpur,76,10186,>10000,male,39,Less than 40,1,Yes,467805375,10Cr - 50Cr
+Sudhir Singla,BJP,43.33,Less than 50%,Haryana,S07,Gurgaon,77,33315,>10000,male,53,40 - 60,0,No,32688490,Less than 10Cr
+Sanjay Singh,BJP,36.16,Less than 50%,Haryana,S07,Sohna,78,12453,>10000,male,45,40 - 60,0,No,65188797,Less than 10Cr
+Aftab Ahmed,INC,41.77,Less than 50%,Haryana,S07,Nuh,79,4038,<5000,male,53,40 - 60,0,No,72314656,Less than 10Cr
+Mamman Khan,INC,57.62,More than 50%,Haryana,S07,Ferozepur Jhirka,80,37004,>10000,male,52,40 - 60,1,Yes,53462919,Less than 10Cr
+Mohd Ilyas,INC,28.76,Less than 50%,Haryana,S07,Punahana,81,816,<5000,male,64,More than 60,0,No,25677938,Less than 10Cr
+Praveen Dagar,BJP,29.19,Less than 50%,Haryana,S07,Hathin,82,2887,<5000,male,43,40 - 60,0,No,5701677,Less than 10Cr
+Jagdish Nayar,BJP,45.8,Less than 50%,Haryana,S07,Hodal (SC),83,3387,<5000,male,49,40 - 60,0,No,24875353,Less than 10Cr
+Deepak Mangla,BJP,55.6,More than 50%,Haryana,S07,Palwal,84,28296,>10000,male,52,40 - 60,0,No,210260381,10Cr - 50Cr
+Nayan Pal Rawat,IND,43.95,Less than 50%,Haryana,S07,Prithla,85,16429,>10000,male,48,40 - 60,0,No,23580686,Less than 10Cr
+Neeraj Sharma,INC,38.86,Less than 50%,Haryana,S07,Faridabad NIT,86,3242,<5000,male,47,40 - 60,0,No,91524797,Less than 10Cr
+Seema Trikha,BJP,43.26,Less than 50%,Haryana,S07,Badkhal,87,2545,<5000,female,53,40 - 60,0,No,22683158,Less than 10Cr
+Mool Chand Sharma,BJP,54.42,More than 50%,Haryana,S07,Ballabhgarh,88,41713,>10000,male,55,40 - 60,0,No,119758622,10Cr - 50Cr
+Narender Gupta,BJP,54.41,More than 50%,Haryana,S07,Faridabad,89,21713,>10000,male,60,40 - 60,0,No,575216497,More than 50Cr
+Rajesh Nagar,BJP,57.38,More than 50%,Haryana,S07,Tigaon,90,33841,>10000,male,50,40 - 60,0,No,81211698,Less than 10Cr

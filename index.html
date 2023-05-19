@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Choropleth Map</title>
+  </head>
+  <body>
+    <h2 id="title">Haryana</h2>
+    <div id="secondHalf">
+      <div id="tooltip"></div>
+      <svg id="canvas"></svg>
+      <div id="sortingFeatures">
+        <p>Assets</p>
+        <span id="assets">
+          <mark id="assets1" onClick="handleFilterSelection(event)"
+            >Less than 10cr</mark
+          >
+          <mark id="assets2" onClick="handleFilterSelection(event)"
+            >10cr - 50cr</mark
+          >
+          <mark id="assets3" onClick="handleFilterSelection(event)"
+            >More than 50cr</mark
+          >
+        </span>
+        <p>Criminal cases</p>
+        <span id="criminalCases">
+          <mark id="criminalCases1" onClick="handleFilterSelection(event)"
+            >Yes</mark
+          >
+          <mark id="criminalCases2" onClick="handleFilterSelection(event)"
+            >No</mark
+          >
+        </span>
+        <p>Party</p>
+        <span id="party">
+          <mark id="party1" onClick="handleFilterSelection(event)">BJP</mark>
+          <mark id="party2" onClick="handleFilterSelection(event)">INC</mark>
+          <mark id="party3" onClick="handleFilterSelection(event)">JJP</mark>
+          <mark id="party4" onClick="handleFilterSelection(event)">Others</mark>
+        </span>
+        <p>Gender</p>
+        <span id="gender">
+          <mark id="gender1" onClick="handleFilterSelection(event)">Male</mark>
+          <mark id="gender2" onClick="handleFilterSelection(event)"
+            >Female</mark
+          >
+          <mark id="gender3" onClick="handleFilterSelection(event)"
+            >Transgender</mark
+          >
+        </span>
+        <p>Vote Share</p>
+        <span id="voteShare">
+          <mark id="voteShare1" onClick="handleFilterSelection(event)"
+            >Less than or equal to 50%</mark
+          >
+          <mark id="voteShare2" onClick="handleFilterSelection(event)"
+            >More than 50%</mark
+          >
+        </span>
+      </div>
+    </div>
+  </body>
+  <script defer src="script.js"></script>
+</html>
