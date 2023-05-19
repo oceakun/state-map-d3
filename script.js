@@ -30,7 +30,7 @@ let scale = 10;
 let translateX = width / 2;
 let translateY = height / 2;
 
-let appliedFeatures = [];
+let appliedFilters = [];
 
 let newTranslateX, newTranslateY, newScale;
 
@@ -51,6 +51,7 @@ const clickTracking = {
   voteShare2: false,
 };
 
+// filters mapped to bucket names
 const bucketNames = {
   assets1: "assets_bucket",
   assets2: "assets_bucket",
@@ -68,6 +69,7 @@ const bucketNames = {
   voteShare2: "vote_share_bucket",
 };
 
+// filters mapped to bucket values
 const bucketValues = {
   assets1: "Less than 10Cr",
   assets2: "10Cr - 50Cr",
@@ -87,15 +89,19 @@ const bucketValues = {
 
 const allKeys = Object.keys(clickTracking);
 
-// populate appliedFeatures
+// populate appliedFilters
 const selected = (key) => {
   return clickTracking[key];
 };
-appliedFeatures = allKeys.filter((key) => selected(key));
-console.log("appliedFeatures : ", appliedFeatures);
+appliedFilters = allKeys.filter((key) => selected(key));
 
 let drawHRMap = () => {
-  // console.log("appliedFeatures : ", appliedFeatures);
+  // calculating initial scale and position for map
+  const windowWidth = window.innerWidth;
+  const scale = 0.073715248 * windowWidth + 71.79865206;
+  const translateX = -(5.30223 * windowWidth + 5376.874);
+  const translateY = -(2.10614 * windowWidth + 1871.39);
+
   g.selectAll("path")
     .data(stateData)
     .enter()
@@ -107,8 +113,7 @@ let drawHRMap = () => {
     })
     .attr("d", path)
     .attr("class", "constituency")
-    .attr("transform", `translate(-12800, -4820) scale(175) `)
-    // .attr("transform", `translate(-7765, -2820) scale(105) `)
+    .attr("transform", `translate(${translateX},${translateY}) scale(${scale})`)
     .attr("fill", (stateDataItem) => {
       let id = stateDataItem["properties"]["AC_CODE"];
       let constituency = educationData.find((item) => {
@@ -167,13 +172,12 @@ let drawHRMap = () => {
 };
 
 const updateMap = () => {
-  console.log("updating map");
   educationData.map((constituency) => {
     let newColor;
     const region = g.select("#" + "constituency" + constituency["ac_no"]);
     let party = constituency["party"];
     let returnColor = false;
-
+    // selected filters segregated into their buckets
     const selectedBuckets = {
       assets_bucket: [],
       criminal_cases: [],
@@ -181,6 +185,8 @@ const updateMap = () => {
       gender: [],
       vote_share_bucket: [],
     };
+
+    // that bucket name is set to true, one of whose filters is selected
     const finalBucketNames = {
       assets_bucket: false,
       criminal_cases: false,
@@ -189,15 +195,17 @@ const updateMap = () => {
       vote_share_bucket: false,
     };
 
-    if (appliedFeatures.length == 0) {
+    if (appliedFilters.length == 0) {
       returnColor = true;
-      console.log
     } else {
-      for (let i = 0; i < appliedFeatures.length; i++) {
-        const feature = appliedFeatures[i];
-        const featureBucketValue = bucketValues[feature];
-        const featurebucketName = bucketNames[feature];
-        selectedBuckets[featurebucketName].push(featureBucketValue);
+      for (let i = 0; i < appliedFilters.length; i++) {
+        const filter = appliedFilters[i];
+        const filterBucketValue = bucketValues[filter];
+        const filterBucketName = bucketNames[filter];
+        selectedBuckets[filterBucketName].push(filterBucketValue);
+
+        // chcking if the constituency's bucket values belong to the selectedBuckets
+        // if so, the corresponding bucket name's vakue will be set to 'true' in finalBucketNames list, else 'false'
         if (
           selectedBuckets.assets_bucket.includes(constituency["assets_bucket"])
         ) {
@@ -213,6 +221,14 @@ const updateMap = () => {
         if (selectedBuckets.party.includes(constituency["party"])) {
           finalBucketNames.party = true;
         }
+        if (
+          selectedBuckets.party.includes("Other") &&
+          (constituency["party"] == "IND" ||
+            constituency["party"] == "HLP" ||
+            constituency["party"] == "INLD")
+        ) {
+          finalBucketNames.party = true;
+        }
         if (selectedBuckets.gender.includes(constituency["gender"])) {
           finalBucketNames.gender = true;
         }
@@ -223,52 +239,49 @@ const updateMap = () => {
         ) {
           finalBucketNames.vote_share_bucket = true;
         }
-
+        // list of all the bucket names, to which at least one filter belongs
         const selectedBucketLabels = [];
-
-        const finalPointers = [];
         Object.keys(selectedBuckets).map((key) => {
           if (selectedBuckets[key].length != 0) selectedBucketLabels.push(key);
         });
 
+        // if from all the selected buckets, even one doesnt satisfy the filer, the region will not be coloured
+        const finalPointers = [];
         selectedBucketLabels.map((bucketName) => {
           if (finalBucketNames[bucketName]) finalPointers.push(true);
           else finalPointers.push(false);
         });
+
         if (finalPointers.includes(false)) returnColor = false;
         else returnColor = true;
       }
-
-      if (returnColor) {
-        if (party == "INC") {
-          newColor = "#cbe3f2";
-        } else if (party == "BJP") {
-          newColor = "#e5adf0";
-        } else if (party == "JJP") {
-          newColor = "#adb1f0";
-        } else {
-          newColor = "#f0ecad";
-        }
-      } else newColor = "white";
     }
-    // console.log("newColor : ", newColor);
+    if (returnColor) {
+      if (party == "INC") {
+        newColor = "#cbe3f2";
+      } else if (party == "BJP") {
+        newColor = "#e5adf0";
+      } else if (party == "JJP") {
+        newColor = "#adb1f0";
+      } else {
+        newColor = "#f0ecad";
+      }
+    } else newColor = "white";
+
     region.attr("fill", newColor);
   });
 };
 
+// load the json data from the static files into two variables
 d3.json(statePath).then((data, error) => {
   if (error) {
-    // console.log(log);
   } else {
     stateData = data.features;
-    // console.log(stateData);
-
     d3.json(educationPath).then((data, error) => {
       if (error) {
         console.log(error);
       } else {
         educationData = data;
-        // console.log(educationData);
         drawHRMap();
       }
     });
@@ -276,6 +289,7 @@ d3.json(statePath).then((data, error) => {
 });
 
 // Set up an event listener for window resize
+// resize map accordingly
 window.addEventListener("resize", () => {
   const windowWidth = window.innerWidth;
   const scale = 0.073715248 * windowWidth + 71.79865206;
@@ -291,30 +305,27 @@ const checkKeys = () => {
   const selected = (key) => {
     return clickTracking[key];
   };
-  appliedFeatures = allKeys.filter((key) => selected(key));
-  console.log("appliedFeatures : ", appliedFeatures);
+  appliedFilters = allKeys.filter((key) => selected(key));
   updateMap();
 };
 
 const handleFilterSelection = (event) => {
   const currentId = event.target.id;
   const startsWith = "clicked";
-  console.log("currentId : ", currentId);
-  // look for the substring "clicked", if it is there, get the rest of the string, use it as a property and set
+
+  // check for the element's id
+  // if it lacks the prefix 'clicked', append it at the beginning
+  // update id
   if (currentId.includes(startsWith, 0)) {
     const idSufix = currentId.slice(7, currentId.length);
     const newId = idSufix.charAt(0).toLowerCase() + idSufix.slice(1);
-    console.log("newId : ", newId);
     clickTracking[newId] = false;
     event.target.id = newId;
-    console.log("event.target.id : ", event.target.id);
   } else {
     const newId =
       startsWith + currentId.charAt(0).toUpperCase() + currentId.slice(1);
-    console.log("newId : ", newId);
     clickTracking[currentId] = true;
     event.target.id = newId;
-    console.log("event.target.id : ", event.target.id);
   }
   checkKeys();
 };
