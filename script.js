@@ -34,21 +34,6 @@ let appliedFeatures = [];
 
 let newTranslateX, newTranslateY, newScale;
 
-const assets1 = document.getElementById("assets1");
-const assets2 = document.getElementById("assets2");
-const assets3 = document.getElementById("assets3");
-const criminalCases1 = document.getElementById("criminalCases1");
-const criminalCases2 = document.getElementById("criminalCases2");
-const party1 = document.getElementById("party1");
-const party2 = document.getElementById("party2");
-const party3 = document.getElementById("party3");
-const party4 = document.getElementById("party4");
-const gender1 = document.getElementById("gender1");
-const gender2 = document.getElementById("gender2");
-const gender3 = document.getElementById("gender3");
-const voteShare1 = document.getElementById("voteShare1");
-const voteShare2 = document.getElementById("voteShare2");
-
 const clickTracking = {
   assets1: false,
   assets2: false,
