@@ -1,9 +1,40 @@
-<div>
-  <h2 id="title2">
-    Clustering bubbles into two categories - scrolling animation
-  </h2>
-  <div id="bubbleMap">
-    <div id="tooltip2"></div>
-    <svg id="canvas2"></svg>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../styles/bubbleChart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>d3 works recreated</title>
+  </head>
+  <body>
+    <div id="menuBar">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div id="navbarWrapper">
+      <div id="navbar">
+        <nav>
+          <a href="/pages/index.html">Home<i class="fa fa-arrow-right"></i></a>
+          <hr />
+          <a style="text-decoration: underline; text-decoration-color: #f9066d" href="/pages/bubbleChart.html">bubbleChart<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <a href="/pages/stateMap.html"
+            >stateMap<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <p id="xmark" style="color: #f9066d">X</p>
+        </nav>
+      </div>
+    </div>
+    <div id="content"></div>
+    <h2 id="title">Clustered Bubble Chart</h2>
+    </div>
+  </body>
+  <script src="../scripts/bubbleChart.js"></script>
+</html>

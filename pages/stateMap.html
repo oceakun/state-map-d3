@@ -1,51 +1,97 @@
-<h2 id="title">Haryana</h2>
-<div id="chloroplethMap">
-  <div id="tooltip"></div>
-  <svg id="canvas"></svg>
-  <div id="filtersContainer">
-    <p>Assets</p>
-    <span id="assets">
-      <mark id="assets1" onClick="handleFilterSelection(event)"
-        >Less than 10cr</mark
-      >
-      <mark id="assets2" onClick="handleFilterSelection(event)"
-        >10cr - 50cr</mark
-      >
-      <mark id="assets3" onClick="handleFilterSelection(event)"
-        >More than 50cr</mark
-      >
-    </span>
-    <p>Criminal cases</p>
-    <span id="criminalCases">
-      <mark id="criminalCases1" onClick="handleFilterSelection(event)"
-        >Yes</mark
-      >
-      <mark id="criminalCases2" onClick="handleFilterSelection(event)">No</mark>
-    </span>
-    <p>Party</p>
-    <span id="party">
-      <mark id="party1" onClick="handleFilterSelection(event)">BJP</mark>
-      <mark id="party2" onClick="handleFilterSelection(event)">INC</mark>
-      <mark id="party3" onClick="handleFilterSelection(event)">JJP</mark>
-      <mark id="party4" onClick="handleFilterSelection(event)">Others</mark>
-    </span>
-    <p>Gender</p>
-    <span id="gender">
-      <mark id="gender1" onClick="handleFilterSelection(event)">Male</mark>
-      <mark id="gender2" onClick="handleFilterSelection(event)">Female</mark>
-      <mark id="gender3" onClick="handleFilterSelection(event)"
-        >Transgender</mark
-      >
-    </span>
-    <p>Vote Share</p>
-    <span id="voteShare">
-      <mark id="voteShare1" onClick="handleFilterSelection(event)"
-        >Less than or equal to 50%</mark
-      >
-      <mark id="voteShare2" onClick="handleFilterSelection(event)"
-        >More than 50%</mark
-      >
-    </span>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../styles/stateMap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>d3 works recreated</title>
+  </head>
+  <body>
+    <div id="menuBar">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div id="navbarWrapper">
+      <div id="navbar">
+        <nav>
+          <a href="/pages/index.html">Home<i class="fa fa-arrow-right"></i></a>
+          <hr />
+          <a href="/pages/bubbleChart.html"
+            >bubbleChart<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <a
+            style="text-decoration: underline; text-decoration-color: #f9066d"
+            href="/pages/stateMap.html"
+            >stateMap<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <p id="xmark" style="color: #f9066d">X</p>
+        </nav>
+      </div>
+    </div>
+    <div id="content"></div>
+    <h2 id="title">Haryana</h2>
+    <div id="chloroplethMap">
+      <div id="tooltip"></div>
+      <svg id="canvas"></svg>
+      <div id="filtersContainer">
+        <p>Assets</p>
+        <span id="assets">
+          <mark id="assets1" onClick="handleFilterSelection(event)"
+            >Less than 10cr</mark
+          >
+          <mark id="assets2" onClick="handleFilterSelection(event)"
+            >10cr - 50cr</mark
+          >
+          <mark id="assets3" onClick="handleFilterSelection(event)"
+            >More than 50cr</mark
+          >
+        </span>
+        <p>Criminal cases</p>
+        <span id="criminalCases">
+          <mark id="criminalCases1" onClick="handleFilterSelection(event)"
+            >Yes</mark
+          >
+          <mark id="criminalCases2" onClick="handleFilterSelection(event)"
+            >No</mark
+          >
+        </span>
+        <p>Party</p>
+        <span id="party">
+          <mark id="party1" onClick="handleFilterSelection(event)">BJP</mark>
+          <mark id="party2" onClick="handleFilterSelection(event)">INC</mark>
+          <mark id="party3" onClick="handleFilterSelection(event)">JJP</mark>
+          <mark id="party4" onClick="handleFilterSelection(event)">Others</mark>
+        </span>
+        <p>Gender</p>
+        <span id="gender">
+          <mark id="gender1" onClick="handleFilterSelection(event)">Male</mark>
+          <mark id="gender2" onClick="handleFilterSelection(event)"
+            >Female</mark
+          >
+          <mark id="gender3" onClick="handleFilterSelection(event)"
+            >Transgender</mark
+          >
+        </span>
+        <p>Vote Share</p>
+        <span id="voteShare">
+          <mark id="voteShare1" onClick="handleFilterSelection(event)"
+            >Less than or equal to 50%</mark
+          >
+          <mark id="voteShare2" onClick="handleFilterSelection(event)"
+            >More than 50%</mark
+          >
+        </span>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
+
 <script defer src="../scripts/stateMap.js"></script>

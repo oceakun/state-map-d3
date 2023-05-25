@@ -1,1 +1,44 @@
-<h1>Home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../styles/bubbleChart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>d3 works recreated</title>
+  </head>
+  <body>
+    <div id="menuBar">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div id="navbarWrapper">
+      <div id="navbar">
+        <nav>
+          <a
+            style="text-decoration: underline; text-decoration-color: #f9066d"
+            href="/pages/index.html"
+            >Home<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <a href="/pages/bubbleChart.html"
+            >bubbleChart<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <a href="/pages/stateMap.html"
+            >stateMap<i class="fa fa-arrow-right"></i
+          ></a>
+          <hr />
+          <p id="xmark" style="color: #f9066d">X</p>
+        </nav>
+      </div>
+    </div>
+    <div id="content"></div>
+    <h2 id="title">Home</h2>
+  </body>
+  <script src="../scripts/bubbleChart.js"></script>
+</html>
