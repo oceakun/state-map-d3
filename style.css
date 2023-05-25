@@ -9,24 +9,23 @@ body {
 }
 
 body {
-  background-color: #000000;
+  background-color: #2e2a41;
 }
 
-#secondHalf {
+#chloroplethMap {
   display: flex;
   flex-flow: row nowrap;
-  justify-content:flex-end;
+  justify-content: flex-end;
   /* margin-top:300px; */
 }
 
 @media only screen and (max-width: 992px) {
-  #secondHalf {
+  #chloroplethMap {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-        /* margin-top:100vw; */
-
+    /* margin-top:100vw; */
   }
 }
 
@@ -41,7 +40,7 @@ body {
   /* padding:1rem 4rem 0 1rem; */
 }
 
-svg{
+svg {
   position: absolute;
   z-index: 1;
 }
@@ -61,11 +60,11 @@ svg{
   color: #eab991;
   font-size: 14px;
   /* margin-bottom: 5px; */
-  position: absolute;
+  position: fixed;
   z-index: 3;
   background-color: rgb(21, 15, 36);
-  border:1px solid rgb(79, 67, 115);
-  padding:5px;
+  border: 1px solid rgb(79, 67, 115);
+  padding: 5px;
 
   border-radius: 3px;
 }
@@ -79,13 +78,13 @@ svg{
   color:rgba(229, 173, 240,0.1);
   color:rgba(173, 177, 240,0.1);
   collor:rgba(240, 236, 173,0.1); */
-  position:absolute;
-  z-index:2;
+  position: absolute;
+  z-index: 2;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  padding:1rem 6rem 0 1rem;
+  padding: 1rem 6rem 0 1rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -93,8 +92,8 @@ svg{
     /* display: flex;
     flex-flow: column nowrap;
     justify-content: space-around; */
-    margin-top:500px;
-    padding-bottom:100px;
+    margin-top: 500px;
+    padding-bottom: 100px;
   }
 }
 #filtersContainer p {
@@ -127,10 +126,10 @@ svg{
   padding: 1px 3px;
   margin-left: 5px;
   opacity: 0.6;
-  border:rgba(255, 255, 255, 0.6) 1px solid;
-  border-radius:3px;
-  color:white;
-  font-size:12px;
+  border: rgba(255, 255, 255, 0.6) 1px solid;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
 }
 
 #assets1:hover,
@@ -165,14 +164,14 @@ svg{
 #clickedGender3,
 #clickedVoteShare1,
 #clickedVoteShare2 {
-  background: rgba(250, 83, 125,0.1);
+  background: rgba(250, 83, 125, 0.1);
   padding: 2px 4px;
   margin-left: 5px;
   opacity: 0.9;
-  border:rgb(250, 83, 125) 1px solid;
-  border-radius:3px;
-  color : rgb(250, 83, 125);
-  font-size:12px;
+  border: rgb(250, 83, 125) 1px solid;
+  border-radius: 3px;
+  color: rgb(250, 83, 125);
+  font-size: 12px;
 }
 
 #clickedAssets1:hover,
@@ -191,4 +190,114 @@ svg{
 #clickedVoteShare2:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+#navbarWrapper {
+  visibility: visible;
+  background: yellow;
+}
+
+#menuBar {
+  display: none;
+}
+
+#navbar {
+  background: rgb(131, 168, 145);
+  background: black;
+  padding: 1rem 0;
+  /* border-bottom: 1px solid white; */
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  gap:1rem;
+}
+
+nav hr {
+  color:white;
+  display:none;
+  width:100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 0.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a i {
+  visibility: hidden;
+}
+
+nav a:hover i {
+  visibility: hidden;
+  
+}
+
+@media only screen and (max-width: 692px) {
+  #navbarWrapper {
+    visibility: hidden;
+    position: fixed;
+    z-index: 8;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    margin: -32px -10px;
+  }
+
+  nav hr {
+    color:white;
+    display:inline-block;
+    width:100%;
+  }
+
+  #navbar {
+    border-bottom: 1px solid transparent;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;   
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+  }
+
+  nav a:hover i {
+    visibility: visible;
+  }
+  
+
+  #menuBar {
+    display: inline-block;
+    /* padding-bottom: 0.2rem; */
+    background: black;
+    border-radius:4px;
+  }
+  #menuBar i {
+    color: pink;
+    border: 1px solid transparent;
+    padding: 0.2rem 0.2rem;
+    font-weight: 100;
+  }
+
+  #menuBar i:hover {
+    cursor: pointer;
+    border: 1px solid rgb(255, 192, 203);
+    background: rgba(255, 192, 203, 0.1);
+    border-radius:4px;
+  }
 }

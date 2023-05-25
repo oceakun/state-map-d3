@@ -1,5 +1,5 @@
-const statePath = "./assets/S07_AC.json";
-const educationPath = "./assets/Sample_HR.json";
+const statePath = "../assets/S07_AC.json";
+const educationPath = "../assets/Sample_HR.json";
 
 let countyData;
 let educationData;
@@ -10,8 +10,6 @@ const canvas = d3.select("#canvas");
 const g = canvas.append("g");
 
 const tooltip = document.getElementById("tooltip");
-const menuBar = document.getElementById("menuBar");
-const navbarWrapper = document.getElementById("navbarWrapper");
 
 window.onmousemove = function (e) {
   const x = e.clientX,
@@ -266,6 +264,7 @@ d3.json(statePath).then((data, error) => {
   if (error) {
   } else {
     stateData = data.features;
+    console.log("stateData : ", stateData);
     d3.json(educationPath).then((data, error) => {
       if (error) {
         console.log(error);
@@ -325,20 +324,3 @@ const handleFilterSelection = (event) => {
   }
   checkKeys();
 };
-
-menuBar.addEventListener("click", () => {
-  if (navbarWrapper.style.visibility == "hidden") {
-    navbarWrapper.style.visibility = "visible";
-    console.log("set to visible");
-  } else {
-    navbarWrapper.style.visibility = "hidden";
-    console.log("set to hidden");
-  }
-});
-
-navbarWrapper.addEventListener("click", () => {
-  if (navbarWrapper.style.visibility == "visible") {
-    navbarWrapper.style.visibility = "hidden";
-    console.log("navbarWrapper - set to hidden");
-  } 
-})
